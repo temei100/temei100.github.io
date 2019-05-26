@@ -1,0 +1,69 @@
+{% if page.cover %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@graph":[
+    { // Logo设置
+      "@type": "Organization",
+      "logo": "{{ site.url }}{{ site.img }}/{{ site.logo }}",    //LOGO图片地址，必须是112x112，.jpg,.png,.gif
+      "url": "{{ site.url }}"    //与Logo相关联的url
+    },
+    { //面包屑导航
+      "@type": "BreadcrumbList",
+       "itemListElement": [
+       {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "导航",
+          "item": "{{ site.url }}{{ site.baseurl }}/"
+       },{
+          "@type": "ListItem",
+          "position": 2,
+          {% assign key=page.categories[0] %}
+          {% assign infos= site.data.cateinfos %}
+          "name": "{{ infos[key].name }}",
+          "item": "{{ site.url }}{{ site.baseurl }}/c/{{ key }}/"
+       },{
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{ page.tags[0] }}",
+          "item": "{{ site.url }}{{ site.baseurl }}/t/all#{{  page.tags[0] }}"
+       }
+       ]
+    },
+    { //文章信息
+      "@type": "Article",
+      "dateModified": "{{ page.changedate }}",
+      "datePublished": "{{ page.createdate }}",
+      "headline": "{{ page.title }}",
+      "image": [                                                //提供三张不同比例的高清图片，长x宽 >= 300 000 
+        "{{ site.url }}{{ site.img }}/cover/1x1/{{ page.cover }}",  //至少：600*600 = 360 000
+        "{{ site.url }}{{ site.img }}/cover/4x3/{{ page.cover }}",  //至少：800*600 = 480 000
+        "{{ site.url }}{{ site.img }}/cover/16x9/{{ page.cover }}"  //至少：960*540 = 518 400
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "{{ page.author }}"    //作者名称
+      },
+      "publisher": {
+         "@type": "Organization",
+         "name": "{{ site.name }}",    //发布机构名称
+         "logo": {
+           "@type": "ImageObject",
+           "url": "{{ site.url }}{{ site.img }}/{{ site.logo }}" //发布机构Logo,遵循
+         }
+      },
+      "description": "{{ page.description }}",
+      "mainEntityOfPage": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",       //网页权威链接，无重复网页就设置成当前页地址
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "xpath": [
+          "/html/head/title",                              //指向head中的title
+          "/html/head/meta[@name='description']/@content"  //指向head中的description
+         ]
+      }
+    }
+  ]
+ }
+</script>
+{% endif %}
