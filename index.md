@@ -24,14 +24,15 @@ pagination:
 
 <div style="text-align:center">
 
-<a href="https://www.tmall.com">天猫</a>&nbsp;
-<a href="https://www.taobao.com">淘宝</a>&nbsp;
-<a href="https://www.vip.com/">唯品会</a>&nbsp;
-<a href="https://www.mogu.com/">蘑菇街</a>&nbsp;
-<a href="https://c.duomai.com/track.php?k=WYppWas1DZpVXZmcDOwMTPklWYmAjMzUjMy0DZp9VZ0l2cmYiRyUSbvNmLzYTMuU3b5ZkMlYkMlE0MlAHd0hWP0Zibj9">网易严选</a>&nbsp;
-<a href="https://c.duomai.com/track.php?k=j9WYppWas1DZpVXZmczM3ETPklWYmAjMzUjMy0DZp9VZ0l2cmYiJGJTJt92YuEGbvF2auc3d3ZkMlYkMlE0MlAHd0hWP0Zib">考拉海购</a>&nbsp;
-<a href="https://c.duomai.com/track.php?site_id=224482&lid=4193&aid=61&euid=lijiaocn&t=http%3A%2F%2Fwww.360buy.com%2F">京东</a>&nbsp;
-<a href="https://www.xiaohongshu.com/explore">小红书</a>&nbsp;
+<a target="_blank" href="https://www.tmall.com">天猫</a>&nbsp;
+<a target="_blank" href="https://www.taobao.com">淘宝</a>&nbsp;
+<a target="_blank" href="https://www.vip.com/">唯品会</a>&nbsp;
+<a target="_blank" href="https://www.mogu.com/">蘑菇街</a>&nbsp;
+<a target="_blank" href="https://c.duomai.com/track.php?k=WYppWas1DZpVXZmcDOwMTPklWYmAjMzUjMy0DZp9VZ0l2cmYiRyUSbvNmLzYTMuU3b5ZkMlYkMlE0MlAHd0hWP0Zibj9">网易严选</a>&nbsp;
+<a target="_blank" href="https://c.duomai.com/track.php?k=j9WYppWas1DZpVXZmczM3ETPklWYmAjMzUjMy0DZp9VZ0l2cmYiJGJTJt92YuEGbvF2auc3d3ZkMlYkMlE0MlAHd0hWP0Zib">考拉海购</a>&nbsp;
+<a target="_blank" href="https://c.duomai.com/track.php?site_id=224482&lid=4193&aid=61&euid=lijiaocn&t=http%3A%2F%2Fwww.360buy.com%2F">京东</a>&nbsp;
+<a target="_blank" href="https://www.xiaohongshu.com/explore">小红书</a>&nbsp;
+
 </div>
 
 {% include pagination.html paginator=paginator reverse="true" center="true" %}
