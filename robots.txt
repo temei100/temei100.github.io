@@ -1,3 +1,4 @@
 # robots.txt generated at http://tool.chinaz.com/robots/ 
 Sitemap: https://www.temei100.com/sitemap.xml
 Sitemap: https://www.temei100.com/beauty/sitemap.xml
+Sitemap: https://www.temei100.com/movie/sitemap.xml
