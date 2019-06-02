@@ -41,9 +41,11 @@ pagination:
 
 <div style="text-align:center">
 
+<p><a href="https://www.temei100.com/beauty/cosmetics/2019/06/01/mian-mo-zhi-shi-3/">面膜知识（三）：面膜的分类方法和常见种类</a></p>
+
 <p><a href="https://www.temei100.com/beauty/cosmetics/2019/05/29/mian-mo-zhi-shi-2/">面膜知识（二）：面膜的使用方法和常见误区</a></p>
 
-<p><a href="https://www.temei100.com/beauty/cosmetics/2019/05/25/mian-mo-zhi-shi-1/">面膜知识（一）：面膜的用途与选购技巧</a></p>
+<p><a href="https://www.temei100.com/beauty/cosmetics/2019/05/25/mian-mo-zhi-shi-1/">面膜知识（一）：面膜的用途与组成成分</a></p>
 
 <p><a href="https://www.temei100.com/movie/drama/2019/05/26/maria-by-callas/">玛丽亚·卡拉斯：为爱而生，法国电影，5月31日上映</a></p>
 
